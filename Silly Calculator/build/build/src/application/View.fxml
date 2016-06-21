@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" percentHeight="16.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" percentHeight="16.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox fx:id="bDisplay" alignment="CENTER" prefHeight="100.0" prefWidth="263.0" GridPane.columnSpan="4">
+         <children>
+            <Label fx:id="display" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="B0" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="172.0" styleClass="nButton" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
+         <children>
+            <Button fx:id="BEq" mnemonicParsing="false" onAction="#addIcon" prefHeight="157.0" prefWidth="85.0" text="=" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="BC" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="C" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="BMod" ellipsisString="\%" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="\%" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="BDiv" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="÷" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="BTimes" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="×" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="B7" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="7" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="B8" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="8" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="B9" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="9" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="BMin" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" stylesheets="@application.css" text="-" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="B4" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="4" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="B5" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="5" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="B6" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="6" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="BPlus" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="+" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="B1" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="1" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="B2" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="2" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="B3" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="nButton" text="3" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="BDot" mnemonicParsing="false" onAction="#addIcon" prefHeight="77.0" prefWidth="85.0" styleClass="outButton" text="." />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

@@ -1,0 +1,32 @@
+#bDisplay{
+	-fx-background-color: #666666;
+}
+#display{
+	-fx-font: 64px "Serif";
+}
+.hbox{
+	-fx-background-color: #000000;
+}
+.nButton{
+	-fx-background-color: #ff1a1a;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+}
+.outButton{
+	-fx-background-color: #FFFFFF;
+	-fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: black;
+    -fx-font-size: 36px;
+}
+#BEq{
+	-fx-background-color: #FFFFFF;
+	-fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 36px;
+}
